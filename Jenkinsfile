@@ -3,7 +3,7 @@ repository = "kafka-docker"
 
 // This controls which build is triggered
 deploymentMap = [
-  "dev": "../Flow/feature-dab"
+  "dev-0.10.0.0": "../Flow/feature-dab"
 ]
 
 node {
