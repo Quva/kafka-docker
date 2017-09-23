@@ -15,5 +15,7 @@ ADD start-kafka.sh /usr/bin/start-kafka.sh
 ADD broker-list.sh /usr/bin/broker-list.sh
 ADD create-topics.sh /usr/bin/create-topics.sh
 
+ENV KAFKA_HEAP_OPTS "-Xms256m -Xmx4096m"
+
 # Use "exec" form so that it runs as PID 1 (useful for graceful shutdown)
 CMD ["start-kafka.sh"]
